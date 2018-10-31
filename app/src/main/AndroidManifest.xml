@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FoodNutritionDatabase" />
+        <activity android:name=".CBCNewsReader" />
+        <activity android:name=".MovieInformation" />
+        <activity android:name=".OCTranspoBusRouteApp"></activity>
     </application>
 
 </manifest>
