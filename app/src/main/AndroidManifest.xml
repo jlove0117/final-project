@@ -10,15 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".FoodNutritionDatabase" />
+        <activity android:name=".CBCNewsReader" />
+        <activity android:name=".MovieInformation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodNutritionDatabase" />
-        <activity android:name=".CBCNewsReader" />
-        <activity android:name=".MovieInformation" />
         <activity android:name=".OCTranspoBusRouteApp"></activity>
     </application>
 
