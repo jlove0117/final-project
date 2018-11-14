@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class MovieInformation extends Activity {
 
+    //Testing new repository fork
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
