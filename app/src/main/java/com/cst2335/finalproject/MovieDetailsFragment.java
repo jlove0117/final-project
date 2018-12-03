@@ -62,18 +62,20 @@ public class MovieDetailsFragment extends Fragment {
         poster = (ImageView) rootView.findViewById(R.id.movieposter);
         save = (Button) rootView.findViewById(R.id.moviesave);
         save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ContentValues cValues = new ContentValues();
-                cValues.put(MovieDatabaseHelper.KEY_TITLE, t);
-                cValues.put(MovieDatabaseHelper.KEY_YEAR, y);
-                cValues.put(MovieDatabaseHelper.KEY_RATING, ra);
-                cValues.put(MovieDatabaseHelper.KEY_RUNTIME, ru);
-                cValues.put(MovieDatabaseHelper.KEY_ACTORS, a);
-                cValues.put(MovieDatabaseHelper.KEY_PLOT, p);
-                cValues.put(MovieDatabaseHelper.KEY_POSTER, po);
-                db.insert(MovieDatabaseHelper.TABLE_NAME, "NullColumnName", cValues);
-            }
+
+             @Override
+             public void onClick(View v) {
+                 ContentValues cValues = new ContentValues();
+                 cValues.put(MovieDatabaseHelper.KEY_TITLE, t);
+                 cValues.put(MovieDatabaseHelper.KEY_YEAR, y);
+                 cValues.put(MovieDatabaseHelper.KEY_RATING, ra);
+                 cValues.put(MovieDatabaseHelper.KEY_RUNTIME, ru);
+                 cValues.put(MovieDatabaseHelper.KEY_ACTORS, a);
+                 cValues.put(MovieDatabaseHelper.KEY_PLOT, p);
+                 cValues.put(MovieDatabaseHelper.KEY_POSTER, po);
+                 db.insert(MovieDatabaseHelper.TABLE_NAME, "NullColumnName", cValues);
+             }
+
         });
         back = (Button) rootView.findViewById(R.id.movieback);
         back.setOnClickListener(new View.OnClickListener() {

@@ -6,6 +6,7 @@
     tools:context=".MovieDetailsFragment"
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true" >
+    
 
     <ImageView
         android:id="@+id/movieposter"

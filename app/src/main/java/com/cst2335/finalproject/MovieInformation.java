@@ -100,48 +100,49 @@ public class MovieInformation extends Activity {
         private String title, year, rating, runtime, actors, plot, poster;
 
         protected String doInBackground (String... args) {
-            String info = "";
-            URL url;
-            try {
-                url = new URL(args[0]);
-            } catch (MalformedURLException e) {
-                Log.i(ACTIVITY_NAME, "Malformed URL");
-                return null;
-            }
-            HttpURLConnection conn = null;
-            try {
-                conn = (HttpURLConnection) url.openConnection();
-            } catch (IOException e) {
-                Log.i(ACTIVITY_NAME, "url.openConnection threw IOException");
-                return null;
-            }
-            conn.setReadTimeout(10000 /* milliseconds */);
-            conn.setConnectTimeout(15000 /* milliseconds */);
-            try {
-                conn.setRequestMethod("GET");
-            } catch (ProtocolException e) {
-                Log.i(ACTIVITY_NAME, "conn.setRequestMethod threw ProtocolException");
-                return null;
-            }
-            conn.setDoInput(true);
-            // Starts the query
-            try {
-                conn.connect();
-            } catch (IOException e) {
-                Log.i(ACTIVITY_NAME, "conn.connect threw IOException");
-                e.printStackTrace();
-                return null;
-            }
 
-            try {
-                parse(conn.getInputStream());
-            } catch (XmlPullParserException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Log.i(ACTIVITY_NAME, info);
-            return info;
+                String info = "";
+                URL url;
+                try {
+                    url = new URL(args[0]);
+                } catch (MalformedURLException e) {
+                    Log.i(ACTIVITY_NAME, "Malformed URL");
+                    return null;
+                }
+                HttpURLConnection conn = null;
+                try {
+                    conn = (HttpURLConnection) url.openConnection();
+                } catch (IOException e) {
+                    Log.i(ACTIVITY_NAME, "url.openConnection threw IOException");
+                    return null;
+                }
+                conn.setReadTimeout(10000 /* milliseconds */);
+                conn.setConnectTimeout(15000 /* milliseconds */);
+                try {
+                    conn.setRequestMethod("GET");
+                } catch (ProtocolException e) {
+                    Log.i(ACTIVITY_NAME, "conn.setRequestMethod threw ProtocolException");
+                    return null;
+                }
+                conn.setDoInput(true);
+                // Starts the query
+                try {
+                    conn.connect();
+                } catch (IOException e) {
+                    Log.i(ACTIVITY_NAME, "conn.connect threw IOException");
+                    e.printStackTrace();
+                    return null;
+                }
+
+                try {
+                    parse(conn.getInputStream());
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Log.i(ACTIVITY_NAME, info);
+                return info;
         }
 
         protected void onProgressUpdate(Integer... prog) {
