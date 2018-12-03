@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">Final Project</string>
+
+    <string name="hello_message">Hello World!</string>
+    <string name="busButton">OCTranspo Bus Route</string>
+
+    <string name="Login_Title">Login</string>
+    <string name="Login_Name">Login Name</string>
+    <string name="Password_Title">Password</string>
+    <string name="RadioButton_Title">RadioButton</string>
+    <string name="CheckBox_Title">CheckBox</string>
+    <string name="Switch_Title">What does this do?</string>
+
+    <!--<string name="Button_Login">Login</string>-->
+    <!--<string name="onSwitch">Switch is turned on</string>-->
+    <!--<string name="offSwitch">Switch is turned off</string>-->
+    <!--<string name="dialog_message">Do you want to quit?</string>-->
+    <!--<string name="dialog_title">Dialog Title</string>-->
+    <!--<string name="ok">Yes</string>-->
+    <!--<string name="cancel">No</string>-->
+
+    <string name="cbcButton">CBC News Reader</string>
+    <!--<string name="sendButton">Send</string>-->
+    <!--<string name="text">Type new Text</string>-->
+    <!--<string name="todo">TODO</string>-->
+
+    <string name="foodButton">Food Nutrition</string>
+
+    <!--&lt;!&ndash;Not used&ndash;&gt;-->
+    <!--<string name="currentTemp">The current temperature is </string>-->
+    <!--<string name="degrees">Degrees Celsius</string>-->
+    <!--<string name="minTemp">The minimum temperature for today is </string>-->
+    <!--<string name="maxTemp">The maximum temperature for today is </string>-->
+    <!--<string name="windSpeed">The current wind speed is </string>-->
+    <!--<string name="metersPerSecond">  Metres per Second</string>-->
+
+    <string name="movieButton">Movie Information</string>
+    <!--<string name="toastString">Version 1.0 By Karan Joshi</string>-->
+    <!--<string name="dialogAlert">Do you want to go back?</string>-->
+    <!--<string name="proceedButton">Yes</string>-->
+    <!--<string name="cancelButton">No</string>-->
+    <!--<string name="typeNewMessage">What is your new message?</string>-->
+    <!--<string name="goBackButton">Go back</string>-->
+    <!--<string name="newMessage">Save new message</string>-->
+
 </resources>

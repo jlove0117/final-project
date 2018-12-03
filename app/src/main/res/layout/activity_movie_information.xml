@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
     tools:context=".MovieInformation">
+    <requestFocus/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/moviesearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/movieedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="top"
+        android:layout_toLeftOf="@id/moviesearch"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <FrameLayout
+        android:id="@+id/movieframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/moviesearch"
+        android:nextFocusUp="@id/movieframe"
+        android:nextFocusLeft="@id/movieframe"/>
+
+    <ProgressBar
+        android:id="@+id/movieprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+</RelativeLayout>
