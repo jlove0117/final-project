@@ -62,6 +62,7 @@ public class MovieDetailsFragment extends Fragment {
         poster = (ImageView) rootView.findViewById(R.id.movieposter);
         save = (Button) rootView.findViewById(R.id.moviesave);
         save.setOnClickListener(new View.OnClickListener() {
+
              @Override
              public void onClick(View v) {
                  ContentValues cValues = new ContentValues();
@@ -74,6 +75,7 @@ public class MovieDetailsFragment extends Fragment {
                  cValues.put(MovieDatabaseHelper.KEY_POSTER, po);
                  db.insert(MovieDatabaseHelper.TABLE_NAME, "NullColumnName", cValues);
              }
+
         });
         back = (Button) rootView.findViewById(R.id.movieback);
         back.setOnClickListener(new View.OnClickListener() {

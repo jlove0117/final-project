@@ -100,6 +100,7 @@ public class MovieInformation extends Activity {
         private String title, year, rating, runtime, actors, plot, poster;
 
         protected String doInBackground (String... args) {
+
                 String info = "";
                 URL url;
                 try {
