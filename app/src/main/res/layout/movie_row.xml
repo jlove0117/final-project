@@ -3,23 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/movieposterrow"
-        android:layout_width="50dp"
-        android:layout_height="75dp"
-        />
-    <TextView
-        android:id="@+id/movietitlerow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/movieposterrow"
-        android:layout_toLeftOf="@id/movieclosebutton"/>
-    <ImageView
-        android:id="@+id/movieclosebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/movieclose"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+
+
 
 </RelativeLayout>
